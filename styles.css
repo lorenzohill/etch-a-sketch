@@ -8,15 +8,23 @@ body{
 .canvas{
     background-color: red;
     display: flex;
-    
+    flex-wrap: wrap;
     height: 812px;
     width: 812px;
-    z-index: -100;
     
 }
 
 .pixel{
-    background-color: purple;
-    height: 100px;
-    width: 100px;
+    background-color: white;
+    height: auto;
+    width: 50px;
+    flex: auto;
+}
+
+.pixel:hover{
+    background-color: lightgray;
+}
+
+.dark{
+    background-color: black;
 }

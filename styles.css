@@ -11,13 +11,15 @@ body{
     flex-wrap: wrap;
     height: 812px;
     width: 812px;
+    border-width: 10px;
+    border-style: dashed;
     
 }
 
 .pixel{
     background-color: white;
     height: auto;
-    width: 50px;
+    width: 16px;
     flex: auto;
 }
 
@@ -27,4 +29,9 @@ body{
 
 .dark{
     background-color: black;
+}
+
+button{
+    background-color: antiquewhite;
+    margin-bottom: 8px;
 }

@@ -1,7 +1,10 @@
 const canvas = document.querySelector(".canvas")
 const canvasSize = 812
+const clearButton = document.querySelector("#clear")
 
-for(let i = 0; i < 128; i++){
+clearButton.addEventListener("click", clearBoard)
+
+for(let i = 0; i < 11128; i++){
     const div = document.createElement("div")
     div.classList.add("pixel")
     div.addEventListener('mouseover',draw)
@@ -13,4 +16,11 @@ for(let i = 0; i < 128; i++){
 function draw(Event){
     const div = document.querySelector("div")
     Event.target.classList.add("dark")
+}
+
+function clearBoard(){
+    const div = document.querySelectorAll(".pixel")
+    div.forEach(element => { element.classList.remove("dark")
+        
+    });
 }

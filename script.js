@@ -1,5 +1,6 @@
 const canvas = document.querySelector(".canvas")
-let canvasSize = 256
+let canvasSize = 16
+let backgroundCanvas = 812
 const clearButton = document.querySelector("#clear")
 const changeSizeButton = document.querySelector("#changeSize")
 
@@ -10,9 +11,11 @@ createBoard(canvasSize)
 
 function createBoard(canvasSize){
 
-    for(let i = 0; i < canvasSize; i++){
+    for(let i = 0; i < canvasSize * canvasSize; i++){
         const div = document.createElement("div")
         div.classList.add("pixel")
+        let resize = backgroundCanvas / canvasSize
+        div.style.width = resize + "px" 
         div.addEventListener('mouseover',draw)
         canvas.appendChild(div)
         console.log("Div Created")

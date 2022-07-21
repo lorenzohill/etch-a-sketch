@@ -1,10 +1,12 @@
 const canvas = document.querySelector(".canvas")
-let canvasSize = 812
+let canvasSize = 256
 const clearButton = document.querySelector("#clear")
 const changeSizeButton = document.querySelector("#changeSize")
 
 changeSizeButton.addEventListener("click", changeSize)
 clearButton.addEventListener("click", clearBoard)
+
+createBoard(canvasSize)
 
 function createBoard(canvasSize){
 

@@ -19,7 +19,7 @@ body{
 .pixel{
     background-color: white;
     height: auto;
-    width: 16px;
+    width: 10px;
     flex: auto;
 }
 

@@ -3,9 +3,15 @@ let canvasSize = 16
 let backgroundCanvas = 812
 const clearButton = document.querySelector("#clear")
 const changeSizeButton = document.querySelector("#changeSize")
+const blackPixel = document.querySelector("#blackPixel")
+const randomColor = document.querySelector("#randomColor")
+const darken = document.querySelector("#darken")
 
 changeSizeButton.addEventListener("click", changeSize)
 clearButton.addEventListener("click", clearBoard)
+blackPixel.addEventListener("click", notImplemented)
+randomColor.addEventListener("click", notImplemented)
+darken.addEventListener("click", notImplemented)
 
 createBoard(canvasSize)
 
@@ -59,4 +65,8 @@ function deleteBoard(){
         element.remove()
         
     });
+}
+
+function notImplemented(){
+    alert("This function has not been implemented yet.")
 }
